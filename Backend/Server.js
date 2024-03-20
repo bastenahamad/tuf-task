@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-console.log(process.env.DB_PASSWORD)
 
 const db = mysql.createConnection({
   host: "bnibenmymuw9exgept14-mysql.services.clever-cloud.com",
@@ -26,7 +25,7 @@ db.connect((err) => {
 });
 
 app.post("/create", (req, res) => {
-  console.log(req);
+  console.log(req.body);
   const options = {
     timeZone: "Asia/Kolkata",
     hour12: false,
