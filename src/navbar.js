@@ -3,10 +3,8 @@ import { useState, useCallback } from "react";
 import Textarea from "./TextArea";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import {useId} from "react-id-generator";
 
 function Navbar() {
-  const [nextId] = useId();
   const [code, setCode] = useState("");
   const [lang, setLang] = useState("");
   const [input, setInput] = useState("");
@@ -39,7 +37,6 @@ function Navbar() {
     e.preventDefault();
     try{
       await axios.post("https://tuf-task-d8nf.onrender.com/create", {
-        id: nextId,
         username: name,
         lang: lang,
         code: code,

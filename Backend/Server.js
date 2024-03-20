@@ -26,6 +26,7 @@ db.connect((err) => {
 });
 
 app.post("/create", (req, res) => {
+  console.log(req);
   const options = {
     timeZone: "Asia/Kolkata",
     hour12: false,
