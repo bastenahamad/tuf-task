@@ -1,0 +1,58 @@
+body {
+  background-color: #282c34;
+  color: #61dafb;
+  font-family: monospace;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #61dafb;
+  padding: 15px;
+  margin-left: 32%;
+  margin-right: 32%;
+  border-radius: 5px;
+  text-align: center;
+}
+.code-text {
+  padding: 5px;
+}
+.stdio {
+  padding: 10px;
+  height: 250px;
+  width: 90%;
+}
+.left-div {
+  margin-top: 86px;
+}
+.submission {
+  text-align: center;
+  padding: 10px;
+}
+
+.tables {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.table-code, .table-name, .table-lang, .table-in, .table-out{
+  box-shadow: 1px 1px 1px 1px #61dafb;
+  padding: 10px;
+  font-weight: 800;
+  font-size: larger;
+}
+.table-code-view, .table-name-view, .table-lang-view, .table-in-view, .table-out-view {
+  box-shadow: 3px 3px #61dafb;
+  padding: 5px;
+  font-weight: 500;
+  background-color: aliceblue;
+  color: black;
+}
+.table-data {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+  font-weight: 900;
+}
