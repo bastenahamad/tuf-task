@@ -35,17 +35,23 @@ function Navbar() {
 
   const submit = async (e) => {
     e.preventDefault();
-    try{
-      await axios.post("https://tuf-task-d8nf.onrender.com/create", {
-        username: name,
-        lang: lang,
-        code: code,
-        stdin: input,
-      });
-      navigate("/submission");
-    } catch(err) {
-      console.log(err);
+    if(name === "" || code === "" || lang === "") {
+      window.alert("Please fill all the fields");
     }
+    else {
+        try {
+          await axios.post("https://tuf-task-d8nf.onrender.com/create", {
+            username: name,
+            lang: lang,
+            code: code,
+            stdin: input,
+          });
+          navigate("/submission");
+        } catch (err) {
+          console.log(err);
+        }
+    }
+    
   }
   return (
     <div>

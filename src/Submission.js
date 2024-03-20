@@ -18,7 +18,6 @@ function Submission() {
     }
     fetch();
   }, [])
-  console.log(info);
   return (
     <div className="submission">
       <h1>Submission View</h1>
