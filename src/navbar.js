@@ -38,7 +38,13 @@ function Navbar() {
   const submit = async (e) => {
     e.preventDefault();
     try{
-      await axios.post("http://localhost:8081/create", {id:nextId, username:name, lang:lang, code:code, stdin:input});
+      await axios.post("https://tuf-task-d8nf.onrender.com/create", {
+        id: nextId,
+        username: name,
+        lang: lang,
+        code: code,
+        stdin: input,
+      });
       navigate("/submission");
     } catch(err) {
       console.log(err);

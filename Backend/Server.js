@@ -11,10 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 console.log(process.env.DB_PASSWORD)
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
+  host: "bnibenmymuw9exgept14-mysql.services.clever-cloud.com",
+  user: "u5gl1tkiycboaray",
   password: `${process.env.DB_PASSWORD}`,
-  database: "new_schema1",
+  database: "bnibenmymuw9exgept14",
 });
 
 db.connect((err) => {

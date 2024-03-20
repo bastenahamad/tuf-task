@@ -7,9 +7,10 @@ function Submission() {
   const [info, setInfo] = useState([]);
   useEffect(() => {
     const fetch = async () => {
-     axios.get("http://localhost:8081/")
+     axios
+       .get("https://tuf-task-d8nf.onrender.com/")
        .then((res) => {
-          setInfo(res.data);
+         setInfo(res.data);
        })
        .catch((err) => {
          console.error(err);
